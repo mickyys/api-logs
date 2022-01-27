@@ -12,9 +12,3 @@ jobs:
           git status
           git log
           git tag
-          git describe --tags
-
-
-          
-              
-
