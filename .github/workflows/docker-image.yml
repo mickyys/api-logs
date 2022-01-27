@@ -12,7 +12,9 @@ jobs:
           git status
           git log
           git tag
-          git describe --abbrev=0 --tags
+          git describe --tags
+
+
           
               
 
