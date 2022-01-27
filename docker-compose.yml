@@ -2,14 +2,14 @@ version: "3.9"
 services:
   api-logs:  
      build: .
-    #  image: hampcl/api-logs:latest
+     image: hampcl/api-logs:latest
      env_file:
         - dev.env  
-     volumes:    
-         - .:/opt/app
+    #  volumes:    
+    #      - .:/opt/app
      ports:    
          - 3000:3000
-         - 9230:9229
+        #  - 9230:9229
      networks:
          - proxy
 
