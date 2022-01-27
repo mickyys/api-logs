@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: git version
-        run: ls -l  \
-              | git describe --tags $(git rev-list --tags --max-count=1)
+      - run: | 
+          ls -l 
+          git describe --tags $(git rev-list --tags --max-count=1)
+              
+              
+
