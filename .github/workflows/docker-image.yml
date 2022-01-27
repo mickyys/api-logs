@@ -12,7 +12,8 @@ jobs:
       - run: | 
           ls -l 
           git status
-          git logs    
+          git log
+          git describe --abbrev=0 --tags
           
               
 
