@@ -12,3 +12,4 @@ jobs:
           git status
           git log
           git fetch --prune --unshallow
+          git for-each-ref refs/tags --sort=-taggerdate --format=%(refname:short) --count=1 --points-at=HEAD
