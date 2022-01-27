@@ -29,7 +29,7 @@ const logsSchema = new Schema({
     },
     other: String,
   },
-  date: { type: Date, default: new Date()}
+  date: { type: Date, default: ()=> new Date()}
 });
 
 const model = mongoose.model('Logs', logsSchema);
