@@ -28,9 +28,8 @@ const logsSchema = new Schema({
       longitude: String
     },
     other: String,
-    date: { type: Date, default: new Date()}
   },
- 
+  date: { type: Date, default: new Date()}
 });
 
 const model = mongoose.model('Logs', logsSchema);
