@@ -27,7 +27,8 @@ const logsSchema = new Schema({
       latitude: String,
       longitude: String
     },
-    other: String
+    other: String,
+    date: { type: Date, default: new Date()}
   },
  
 });
