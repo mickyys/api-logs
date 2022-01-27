@@ -15,5 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: git describe --abbrev=0 --tags 
-      #docker build . -t hampcl/api-logs:1.0.0
+      run: echo "GIT_TAG=`echo $(git describe --tags --abbrev=0)`" >> $GITHUB_ENV
